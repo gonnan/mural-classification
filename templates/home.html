@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+{% block content %}
+<title>Mural Classification</title>
+<h1>Mural Classification</h1>
+
+<body>
+    The intention of this web app is to take any image of a mural from Mural Festival, and say who painted it, along with other details about the artist.
+    Currently the model is only trained on existing murals painted for Mural Festival, with a few non festival pieces. 
+    I plan on adding to this as I go, but as is, it has about a 99% accuracy on catalogued murals.
+</body>
+
+<p>
+<form method=post enctype=multipart/form-data>
+    <input type=file name=file>
+    <input type=submit value=Upload></form>
+</p>
+{% endblock content %}

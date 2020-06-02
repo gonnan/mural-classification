@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+{% block content %}
+<title>ARtist</title>
+
+<body>
+    <h1>{{ artist.artist }}</h1>
+    <p>Year: {{ artist.year }} </p>
+    <p> Instagram: {{ artist.ig }}</p>
+</body>
+
+<body>
+    <img src="{{ image }}" alt='User Image'>
+</body>
+
+{% endblock content %}
+
